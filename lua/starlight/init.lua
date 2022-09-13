@@ -27,7 +27,6 @@ local M = {}
 
 function M.setup(conf)
     vim.opt.background = "dark"
-    vim.g.colors_name = "starlight"
 
     ---@diagnostic disable-next-line: cast-local-type
     config = vim.tbl_deep_extend("keep", config, conf or {})
@@ -45,6 +44,8 @@ function M.setup(conf)
         apply_transparent()
     end
     config.hooks.after(utils, colors)
+
+    vim.g.colors_name = "starlight"
 end
 
 return M
