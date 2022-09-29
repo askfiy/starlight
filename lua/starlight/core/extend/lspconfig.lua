@@ -42,6 +42,8 @@ function M.load_global_hl(conf, colors)
         LspDiagnosticsUnderlineInformation = { underline = true, sp = colors.blue },
         LspDiagnosticsUnderlineHint = { underline = true, sp = colors.blue },
         LspCodeLens = { fg = colors.gray0 },
+
+        LspInfoBorder = {fg = colors.blue}
     }, M.load_transparent_hl(conf, colors) or {})
 end
 
