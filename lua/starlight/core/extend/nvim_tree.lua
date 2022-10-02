@@ -27,6 +27,7 @@ function M.load_global_hl(conf, colors)
         NvimTreeSpecialFile = { fg = colors.flamingo },
         NvimTreeImageFile = { fg = colors.white },
         NvimTreeOpenedFile = { fg = colors.pink },
+        NvimTreeWindowPicker = { fg = colors.pink, bg = colors.black1, bold = true },
     }, M.load_transparent_hl(conf, colors) or {})
 end
 
