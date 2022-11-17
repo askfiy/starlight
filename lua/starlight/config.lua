@@ -23,6 +23,7 @@ local default_config = {
         bufferline = true,
         nvim_navic = true,
         nvim_notify = true,
+        copilot_vim = true,
         vim_illuminate = true,
         nvim_scrollview = true,
         nvim_treesitter = true,
