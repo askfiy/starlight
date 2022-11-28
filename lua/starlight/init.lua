@@ -29,7 +29,7 @@ function M.setup(conf)
     vim.opt.background = "dark"
 
     ---@diagnostic disable-next-line: cast-local-type
-    config = vim.tbl_deep_extend("keep", config, conf or {})
+    config = vim.tbl_deep_extend("force", config, conf or {})
 
     vim.cmd("highlight clear")
 
