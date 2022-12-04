@@ -15,19 +15,20 @@ function M.load_global_hl(conf, colors)
         ["@function.builtin"] = vim.tbl_deep_extend("keep", { fg = colors.flamingo }, conf.style.functions),
         ["@function.macro"] = vim.tbl_deep_extend("keep", { fg = colors.red }, conf.style.functions),
 
-        ["@method"] = vim.tbl_deep_extend("keep", { fg = colors.flamingo, italic = true }, conf.style.functions),
-        ["@constructor"] = vim.tbl_deep_extend("keep", { fg = colors.flamingo }, conf.style.functions),
+        ["@method"] = vim.tbl_deep_extend("keep", { fg = colors.blue, italic = true }, conf.style.functions),
+        ["@constructor"] = vim.tbl_deep_extend("keep", { fg = colors.blue }, conf.style.functions),
 
         ["@constant"] = vim.tbl_deep_extend("keep", { fg = colors.peach }, conf.style.functions),
         ["@constant.builtin"] = vim.tbl_deep_extend("keep", { fg = colors.peach }, conf.style.functions),
         ["@constant.macro"] = vim.tbl_deep_extend("keep", { fg = colors.pink }, conf.style.functions),
 
-        ["@keyword"] = vim.tbl_deep_extend("keep", { fg = colors.mauve }, conf.style.keywords),
-        ["@keyword.function"] = vim.tbl_deep_extend("keep", { fg = colors.mauve }, conf.style.keywords),
-        ["@keyword.operator"] = { fg = colors.mauve },
-        ["@keyword.return"] = { fg = colors.mauve },
-        ["@repeat"] = { fg = colors.mauve },
-        ["@include"] = { fg = colors.pink, italic = true },
+        ["@keyword"] = vim.tbl_deep_extend("keep", { fg = colors.red }, conf.style.keywords),
+        ["@keyword.function"] = vim.tbl_deep_extend("keep", { fg = colors.red }, conf.style.keywords),
+        ["@keyword.operator"] = { fg = colors.maroon },
+        ["@keyword.return"] = { fg = colors.maroon },
+        ["@repeat"] = { fg = colors.maroon },
+        ["@include"] = { fg = colors.red, italic = true },
+        ["@conditional"] = { fg = colors.red },
 
         ["@string"] = vim.tbl_deep_extend("keep", { fg = colors.green }, conf.style.strings),
         ["@string.regex"] = vim.tbl_deep_extend("keep", { fg = colors.peach }, conf.style.strings),
@@ -51,12 +52,10 @@ function M.load_global_hl(conf, colors)
         ["@boolean"] = { fg = colors.peach, italic = true },
         ["@float"] = { fg = colors.peach, italic = true },
 
-        ["@conditional"] = { fg = colors.mauve },
-
-        ["@type"] = { fg = colors.flamingo },
-        ["@type.builtin"] = { fg = colors.flamingo, italic = true },
-        ["@type.definition"] = { fg = colors.flamingo },
-        ["@type.qualifier"] = { fg = colors.flamingo },
+        ["@type"] = { fg = colors.yellow },
+        ["@type.builtin"] = { fg = colors.yellow, italic = true },
+        ["@type.definition"] = { fg = colors.yellow },
+        ["@type.qualifier"] = { fg = colors.yellow },
 
         ["@parameter"] = { fg = colors.white, italic = true },
 
