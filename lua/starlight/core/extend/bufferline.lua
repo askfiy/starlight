@@ -12,7 +12,7 @@ function M.load_global_hl(conf, colors)
     M.get_fileicons_highlights(conf, colors)
     return vim.tbl_deep_extend("force", {
 
-        Directory = { fg = colors.black2e, bold = true },
+        Directory = { fg = colors.blue, bold = true },
 
         BufferLineFill = { bg = colors.black0 },
 
@@ -65,7 +65,7 @@ function M.load_global_hl(conf, colors)
         BufferLineHint = { fg = colors.black4, bg = colors.black1, bold = false, italic = false },
         BufferLineHintVisible = { fg = colors.black4, bg = colors.black1, bold = false, italic = false },
 
-        BufferLineInfoSelected = { fg = colors.black2e, bg = colors.black2, bold = false, italic = false },
+        BufferLineInfoSelected = { fg = colors.blue, bg = colors.black2, bold = false, italic = false },
         BufferLineInfo = { fg = colors.black4, bg = colors.black1, bold = false, italic = false },
         BufferLineInfoVisible = { fg = colors.black4, bg = colors.black2, bold = false, italic = false },
 
@@ -92,7 +92,7 @@ function M.load_global_hl(conf, colors)
         },
 
         BufferLineInfoDiagnosticSelected = {
-            fg = colors.black2e,
+            fg = colors.blue,
             bg = colors.black2,
             bold = false,
             italic = false,

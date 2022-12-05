@@ -12,8 +12,8 @@ function M.load_global_hl(conf, colors)
 
         ["@function"] = vim.tbl_deep_extend("keep", { fg = colors.blue }, conf.style.functions),
         ["@function.call"] = vim.tbl_deep_extend("keep", { fg = colors.blue }, conf.style.functions),
-        ["@function.builtin"] = vim.tbl_deep_extend("keep", { fg = colors.flamingo }, conf.style.functions),
-        ["@function.macro"] = vim.tbl_deep_extend("keep", { fg = colors.red }, conf.style.functions),
+        ["@function.builtin"] = vim.tbl_deep_extend("keep", { fg = colors.blue }, conf.style.functions),
+        ["@function.macro"] = vim.tbl_deep_extend("keep", { fg = colors.blue }, conf.style.functions),
 
         ["@method"] = vim.tbl_deep_extend("keep", { fg = colors.blue, italic = true }, conf.style.functions),
         ["@constructor"] = vim.tbl_deep_extend("keep", { fg = colors.blue }, conf.style.functions),
