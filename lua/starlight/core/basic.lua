@@ -26,7 +26,7 @@ function M.load_global_hl(conf, colors)
         Substitute = { bg = colors.black4, fg = colors.pink },
         LineNr = { fg = colors.black4 },
         CursorLineNr = { fg = colors.green },
-        MatchParen = { fg = colors.peach, bold = true },
+        MatchParen = { bold = true, bg = colors.black4 },
         ModeMsg = { fg = colors.white, bold = true },
         MsgArea = { fg = colors.white },
         MsgSeparator = {},
