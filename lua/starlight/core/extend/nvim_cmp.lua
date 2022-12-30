@@ -3,7 +3,9 @@ local M = {}
 ---@diagnostic disable-next-line: unused-local
 function M.load_transparent_hl(conf, colors)
     if conf.transparent then
-        return {}
+        return {
+            PmenuThumb = { bg = colors.gray1 },
+        }
     end
 end
 

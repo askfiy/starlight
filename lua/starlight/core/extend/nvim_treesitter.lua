@@ -88,8 +88,6 @@ function M.load_global_hl(conf, colors)
         ["@tag"] = { fg = colors.peach },
         ["@tag.attribute"] = { fg = colors.mauve, italic = true },
         ["@tag.delimiter"] = { fg = colors.maroon },
-
-        ["@property.toml"] = { fg = colors.blue },
     }, M.load_transparent_hl(conf, colors) or {})
 end
 
