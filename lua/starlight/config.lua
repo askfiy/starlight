@@ -10,6 +10,7 @@ local default_config = {
     },
     extend = {
         hop = true,
+        lazy = true,
         packer = true,
         aerial = true,
         fidget = true,
