@@ -40,6 +40,7 @@ local default_config = {
         packer = true,
         aerial = true,
         fidget = true,
+        null_ls = true,
         nvim_cmp = true,
         gitsigns = true,
         markdown = true,
