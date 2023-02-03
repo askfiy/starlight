@@ -88,6 +88,9 @@ function M.load_global_hl(conf, colors)
         ["@tag"] = { fg = colors.peach },
         ["@tag.attribute"] = { fg = colors.mauve, italic = true },
         ["@tag.delimiter"] = { fg = colors.maroon },
+
+        -- json5
+        ["@keyword.json5"] = { fg = colors.blue }, -- link to @label
     }, M.load_transparent_hl(conf, colors) or {})
 end
 
